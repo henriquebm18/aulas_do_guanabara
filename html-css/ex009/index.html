@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ancora e links</title>
+</head>
+<body>
+    <h1>formatacoes</h1>
+    <p>
+        <a href="link pra um outro site">texto qu e vai aparecer pra clicar</a>
+</p>
+<p>
+    <a href="linkxeterno" target="_blank" rel="external">texto qu e vai aparecer pra clicar</a>
+</p>
+<!--rel="nofollow" qnd tu nao da aval pro site externo-->
+<!--target="_self"-->
+<p>
+    <a href="page002.html" rel="next">diz pro google qual a proxima pagina usar rel="prev" pra voltar</a>
+</p>
+<!--href should use ../index.html -->
+
+
+
+
+<!--href="iana.org/"-->
+<p>
+    <h1>links para download</h1>
+    <ul><li><a href="pasta/livro.pdf" download="meulivro.pdf" type="application/pdf"></a></li></ul>
+</p>
+
+
+
+
+<!--a ordem é muito importante aqui-->
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-pequena.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-media.png" type="image/png">
+    <img src="imagens/foto-grande.png" alt="blablabla">
+</picture>
+
+
+
+
+
+
+<audio src="media/somzinho.mp3" controls autoplay loop></audio>
+<!-- usar mp3 ogg e evitar wav pq é pesado: -->
+<audio preload="metadata" controls>
+    <source srcset="midia/a.mp3" type="audio/mpeg">
+    <source srcset="midia/a.ogg" type="audio/ogg">
+    <source srcset="midia/a.wav" type="audio/wav">
+    <p>u cannot play on your browser <a href="midia/a.mp3">baixe aqui o mp3</a></p>
+</audio>
+
+
+<!-- handbrake pra ajustar o video para web - webm é bastante comprimido -->
+<!-- kkk a compressao deu o contrario - ogv -->
+<!-- m4v mp4 webm e ogv (open mas pouco compativel) -->
+<video src="midia/videozao.mp4" width="500" controls></video>
+
+
+<video width="500" poster="imagens/thumb.png" controls>
+    <source srcset="midia/a.mp4" type="audio/mp4">
+    <source srcset="midia/a.mv4" type="audio/mp4">
+    <source srcset="midia/a.webm" type="audio/webm">
+    <source srcset="midia/a.ogv" type="audio/ogg">
+    <p>u cannot play on your browser</p>
+</video>
+
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3hng-hmSv2Y?si=oNlyIKX38JSg8UWZ"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+<!-- vimeo é mais interessante pra qualidade mas pode ter sttuter pra reproducao, mas é mais professional, mais personalizavel,  -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
